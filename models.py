@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
 
 #VGG architecture from scratch
 VGG_types = {
@@ -54,7 +49,7 @@ class VGG_net(nn.Module):
         return nn.Sequential(*layers)
 
 
-# In[ ]:
+
 
 
 #Resnet architecture from scratch
@@ -206,7 +201,7 @@ def ResNet152(img_channel=3, num_classes=1000):
     return ResNet(block, [3, 8, 36, 3], img_channel, num_classes)
 
 
-# In[ ]:
+
 
 
 #GoogleNet architecture from scratch
@@ -297,7 +292,7 @@ class con_block(nn.Module):
 
 
 
-# In[ ]:
+
 
 
 #EfficientNet architecture from scratch
@@ -473,7 +468,7 @@ class EfficientNet(nn.Module):
         return self.classifier(x.view(x.shape[0], -1))
 
 
-# In[ ]:
+
 
 
 #transformer for image classification from scratch
@@ -674,7 +669,7 @@ class VisionTransformer(nn.Module):
         return x
 
 
-# In[ ]:
+
 
 
 #modified GoogleNet with pixel_normaliztion and weight_scale
@@ -783,7 +778,7 @@ class con_block(nn.Module):
         
 
 
-# In[ ]:
+
 
 
 #CNN with transformer
